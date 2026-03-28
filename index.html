@@ -1,86 +1,1446 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MS Dhoni — Legend</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #0e0e0e;
+        --surface: #161616;
+        --surface2: #1e1e1e;
+        --border: #2a2a2a;
+        --gold: #c9a84c;
+        --gold-light: #e8c76a;
+        --gold-dim: rgba(201, 168, 76, 0.12);
+        --text: #f0ece4;
+        --text-muted: #8a8278;
+        --text-dim: #5a5650;
+        --accent: #c9a84c;
+        --radius: 16px;
+        --radius-sm: 10px;
+      }
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Mahendra Singh Dhoni</title>
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap" rel="stylesheet" />
-  <!-- CSS -->
-  <link rel="stylesheet" href="./styles.css">
-</head>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
 
-<body class="grid min-h-screen place-content-center bg-eggshell font-Outfit text-wenge-brown">
-  <main class="lg:max-w-[46.25rem] bg-white lg:my-[5rem] lg:rounded-2xl">
-    <h1 class="sr-only">Mahendra Singh Dhoni Page</h1>
-    <figure class="lg:p-10">
-      <img class="lg:rounded-xl" src="https://bsmedia.business-standard.com/_media/bs/img/article/2024-03/21/full/1711023998-1621.jpg" alt="Mahendra Singh Dhoni" />
-      <figcaption class="sr-only">Mahendra Singh Dhoni</figcaption>
-    </figure>
-    <section class="grid gap-16 py-11 px-[1.875rem]">
-      <header class="grid gap-4">
-        <h2 class="text-3xl text-charcoal font-youngSerif lg:text-5xl">Mahendra Singh Dhoni</h2>
-        <p>
-          Mahendra Singh Dhoni, born on 7 July 1981 in Ranchi, Jharkhand, is a celebrated Indian cricketer renowned for his exceptional leadership and wicket-keeping skills. Known as "Captain Cool," he has led India to numerous victories, including all three ICC trophies. Dhoni is one of the most prolific and successful captains in cricket history.
-        </p>
-      </header>
-      <article class="grid gap-4 p-6 rounded-lg bg-rose-white">
-        <h3 class="text-xl font-bold text-raspbery font-Outfit">Personal Achievements</h3>
-        <ul class="flex flex-col list-disc gap-y-2 ml-7 marker:text-raspbery">
-          <li><span class="pl-3 font-bold">Full Name:</span> Mahendra Singh Dhoni</li>
-          <li><span class="pl-3 font-bold">Born:</span> 7 July 1981, Ranchi, Jharkhand, India</li>
-          <li><span class="pl-3 font-bold">Spouse:</span> Sakshi Dhoni</li>
-          <li><span class="pl-3 font-bold">Height:</span> 5 ft 9 in (175 cm)</li>
-          <li><span class="pl-3 font-bold">Nickname(s):</span> Mahi, Thala, Captain Cool</li>
-          <li><span class="pl-3 font-bold">Military Rank:</span> Honorary Lieutenant Colonel, Indian Army</li>
-        </ul>
-      </article>
-      <article class="grid gap-4 border-b border-grey">
-        <h3 class="text-3xl font-bold font-youngSerif text-nutmeg">Career Highlights</h3>
-        <ul class="flex flex-col mb-10 ml-6 list-disc marker:text-raspbery gap-y-2">
-          <li class="pl-6">Captain of India (2007–2017 in limited overs, 2008–2014 in Tests).</li>
-          <li class="pl-6">Led India to victory in the 2007 ICC World Twenty20, 2011 Cricket World Cup, and 2013 ICC Champions Trophy.</li>
-          <li class="pl-6">Represented Chennai Super Kings in the IPL, winning multiple championships.</li>
-          <li class="pl-6">First captain to win all ICC trophies.</li>
-        </ul>
-      </article>
-      <article class="grid gap-4 border-b border-grey">
-        <h3 class="text-3xl font-bold font-youngSerif text-nutmeg">Statistics</h3>
-        <table>
-          <tr class="text-center border-b border-grey lg:text-left">
-            <td class="p-2">Matches (ODI)</td>
-            <td class="font-bold text-nutmeg">350</td>
-          </tr>
-          <tr class="text-center border-b border-grey lg:text-left">
-            <td class="p-2">Runs Scored</td>
-            <td class="font-bold text-nutmeg">10,773</td>
-          </tr>
-          <tr class="text-center border-b border-grey lg:text-left">
-            <td class="p-2">Batting Average (ODI)</td>
-            <td class="font-bold text-nutmeg">50.53</td>
-          </tr>
-          <tr class="text-center border-b border-grey lg:text-left">
-            <td class="p-2">Centuries</td>
-            <td class="font-bold text-nutmeg">10</td>
-          </tr>
-          <tr class="text-center border-b border-grey lg:text-left">
-            <td class="p-2">Wickets (ODI)</td>
-            <td class="font-bold text-nutmeg">1</td>
-          </tr>
-        </table>
-      </article>
-      <article class="grid gap-4">
-        <h3 class="text-3xl font-bold font-youngSerif text-nutmeg">Awards</h3>
-        <ul class="flex flex-col mb-10 ml-6 list-disc marker:text-raspbery gap-y-2">
-          <li class="pl-6">Padma Bhushan (2018)</li>
-          <li class="pl-6">Padma Shri (2009)</li>
-          <li class="pl-6">Major Dhyan Chand Khel Ratna Award (2008)</li>
-        </ul>
-      </article>
-    </section>
-  </main>
-</body>
+      html {
+        scroll-behavior: smooth;
+      }
 
+      body {
+        background: var(--bg);
+        color: var(--text);
+        font-family: "DM Sans", sans-serif;
+        font-weight: 300;
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      /* ─── NOISE TEXTURE ─── */
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+        pointer-events: none;
+        z-index: 0;
+        opacity: 0.4;
+      }
+
+      /* ─── LAYOUT ─── */
+      .layout {
+        display: grid;
+        grid-template-columns: 320px 1fr;
+        min-height: 100vh;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 32px 24px;
+        gap: 24px;
+        position: relative;
+        z-index: 1;
+      }
+
+      /* ─── SIDEBAR ─── */
+      .sidebar {
+        position: sticky;
+        top: 32px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .profile-card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        overflow: hidden;
+        position: relative;
+      }
+
+      .profile-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          var(--gold),
+          transparent
+        );
+      }
+
+      .profile-img-wrap {
+        position: relative;
+        height: 240px;
+        overflow: hidden;
+      }
+
+      .profile-img-wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
+        transition: transform 0.6s ease;
+        filter: grayscale(20%);
+      }
+
+      .profile-img-wrap:hover img {
+        transform: scale(1.04);
+      }
+
+      .profile-img-wrap::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 80px;
+        background: linear-gradient(transparent, var(--surface));
+      }
+
+      .profile-info {
+        padding: 20px;
+      }
+
+      .profile-name {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 2rem;
+        letter-spacing: 0.04em;
+        color: var(--text);
+        line-height: 1;
+      }
+
+      .profile-badge {
+        display: inline-block;
+        margin-top: 8px;
+        padding: 4px 12px;
+        background: var(--gold-dim);
+        border: 1px solid rgba(201, 168, 76, 0.3);
+        border-radius: 100px;
+        font-size: 0.72rem;
+        font-weight: 500;
+        color: var(--gold);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      /* ─── INFO CARD ─── */
+      .info-card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        overflow: hidden;
+      }
+
+      .info-row {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 13px 18px;
+        border-bottom: 1px solid var(--border);
+        transition: background 0.2s;
+      }
+
+      .info-row:last-child {
+        border-bottom: none;
+      }
+      .info-row:hover {
+        background: var(--surface2);
+      }
+
+      .info-icon {
+        width: 34px;
+        height: 34px;
+        border-radius: 8px;
+        background: var(--gold-dim);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+
+      .info-icon svg {
+        width: 16px;
+        height: 16px;
+        stroke: var(--gold);
+        fill: none;
+        stroke-width: 1.8;
+      }
+
+      .info-label {
+        font-size: 0.68rem;
+        font-weight: 500;
+        color: var(--text-dim);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .info-value {
+        font-size: 0.88rem;
+        color: var(--text);
+        font-weight: 400;
+        margin-top: 1px;
+      }
+
+      /* ─── SOCIAL ─── */
+      .social-card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 16px 18px;
+        display: flex;
+        gap: 10px;
+      }
+
+      .social-btn {
+        flex: 1;
+        height: 40px;
+        border-radius: 8px;
+        background: var(--surface2);
+        border: 1px solid var(--border);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.2s;
+        text-decoration: none;
+      }
+
+      .social-btn:hover {
+        background: var(--gold-dim);
+        border-color: rgba(201, 168, 76, 0.4);
+      }
+
+      .social-btn svg {
+        width: 16px;
+        height: 16px;
+        fill: var(--text-muted);
+        transition: fill 0.2s;
+      }
+      .social-btn:hover svg {
+        fill: var(--gold);
+      }
+
+      /* ─── MAIN CONTENT ─── */
+      .main {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      /* ─── NAV ─── */
+      .nav-card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 6px;
+        display: flex;
+        gap: 4px;
+      }
+
+      .nav-btn {
+        flex: 1;
+        padding: 10px 16px;
+        border-radius: 10px;
+        border: none;
+        background: transparent;
+        color: var(--text-muted);
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.85rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s;
+        white-space: nowrap;
+      }
+
+      .nav-btn:hover {
+        color: var(--text);
+        background: var(--surface2);
+      }
+
+      .nav-btn.active {
+        background: var(--gold);
+        color: #0e0e0e;
+        font-weight: 600;
+      }
+
+      /* ─── CONTENT CARD ─── */
+      .content-card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 36px;
+        display: none;
+        animation: fadeUp 0.4s ease forwards;
+      }
+
+      .content-card.active {
+        display: block;
+      }
+
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(12px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* ─── SECTION HEADER ─── */
+      .section-title {
+        font-family: "DM Serif Display", serif;
+        font-size: 2.2rem;
+        color: var(--text);
+        margin-bottom: 6px;
+        line-height: 1.1;
+      }
+
+      .section-line {
+        width: 40px;
+        height: 3px;
+        background: var(--gold);
+        border-radius: 2px;
+        margin-bottom: 28px;
+      }
+
+      .section-body p {
+        font-size: 0.95rem;
+        line-height: 1.8;
+        color: var(--text-muted);
+        margin-bottom: 16px;
+      }
+
+      .section-body p:last-child {
+        margin-bottom: 0;
+      }
+
+      /* ─── ABOUT GRID ─── */
+      .about-intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin-bottom: 32px;
+      }
+
+      .stat-box {
+        background: var(--surface2);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-sm);
+        padding: 20px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .stat-box::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 100%;
+        background: var(--gold);
+      }
+
+      .stat-num {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 2.4rem;
+        color: var(--gold);
+        letter-spacing: 0.02em;
+        line-height: 1;
+      }
+
+      .stat-label {
+        font-size: 0.78rem;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-top: 4px;
+      }
+
+      /* ─── WHAT I'M DOING (services) ─── */
+      .services-heading {
+        font-family: "DM Serif Display", serif;
+        font-size: 1.5rem;
+        color: var(--text);
+        margin-bottom: 6px;
+      }
+
+      .services-line {
+        width: 30px;
+        height: 2px;
+        background: var(--gold);
+        margin-bottom: 20px;
+      }
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        margin-top: 4px;
+      }
+
+      .service-card {
+        background: var(--surface2);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-sm);
+        padding: 22px;
+        transition:
+          border-color 0.25s,
+          transform 0.25s;
+      }
+
+      .service-card:hover {
+        border-color: rgba(201, 168, 76, 0.4);
+        transform: translateY(-2px);
+      }
+
+      .service-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 10px;
+        background: var(--gold-dim);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 14px;
+      }
+
+      .service-icon svg {
+        width: 22px;
+        height: 22px;
+        stroke: var(--gold);
+        fill: none;
+        stroke-width: 1.5;
+      }
+
+      .service-name {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--text);
+        margin-bottom: 6px;
+      }
+
+      .service-desc {
+        font-size: 0.82rem;
+        color: var(--text-muted);
+        line-height: 1.6;
+      }
+
+      /* ─── PERSONAL DETAILS (highlights) ─── */
+      .highlights-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        margin-bottom: 28px;
+      }
+
+      .highlight-item {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        padding: 14px 18px;
+        background: var(--surface2);
+        border-radius: var(--radius-sm);
+        border: 1px solid var(--border);
+      }
+
+      .hl-key {
+        font-size: 0.7rem;
+        color: var(--text-dim);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .hl-val {
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: var(--text);
+      }
+
+      /* ─── CAREER TIMELINE ─── */
+      .timeline {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+      }
+
+      .timeline-item {
+        display: flex;
+        gap: 20px;
+        position: relative;
+        padding-bottom: 28px;
+      }
+
+      .timeline-item:last-child {
+        padding-bottom: 0;
+      }
+
+      .timeline-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        flex-shrink: 0;
+      }
+
+      .tl-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--gold);
+        flex-shrink: 0;
+        margin-top: 5px;
+        box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.2);
+      }
+
+      .tl-line {
+        width: 1px;
+        flex: 1;
+        background: var(--border);
+        margin-top: 6px;
+      }
+
+      .timeline-item:last-child .tl-line {
+        display: none;
+      }
+
+      .tl-content {
+        flex: 1;
+      }
+
+      .tl-year {
+        font-size: 0.72rem;
+        color: var(--gold);
+        font-weight: 500;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+      }
+
+      .tl-title {
+        font-size: 0.98rem;
+        font-weight: 600;
+        color: var(--text);
+        margin-bottom: 5px;
+      }
+
+      .tl-desc {
+        font-size: 0.83rem;
+        color: var(--text-muted);
+        line-height: 1.6;
+      }
+
+      /* ─── STATS TABLE ─── */
+      .stats-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .stats-table tr {
+        border-bottom: 1px solid var(--border);
+        transition: background 0.2s;
+      }
+
+      .stats-table tr:last-child {
+        border-bottom: none;
+      }
+      .stats-table tr:hover td {
+        background: var(--surface2);
+      }
+
+      .stats-table td {
+        padding: 14px 16px;
+        font-size: 0.88rem;
+        transition: background 0.2s;
+      }
+
+      .stats-table td:first-child {
+        color: var(--text-muted);
+      }
+
+      .stats-table td:last-child {
+        color: var(--gold);
+        font-weight: 600;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 1.1rem;
+        letter-spacing: 0.04em;
+        text-align: right;
+      }
+
+      /* ─── AWARDS ─── */
+      .awards-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .award-item {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 16px 20px;
+        background: var(--surface2);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-sm);
+        transition: border-color 0.2s;
+      }
+
+      .award-item:hover {
+        border-color: rgba(201, 168, 76, 0.35);
+      }
+
+      .award-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        background: var(--gold-dim);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+
+      .award-icon svg {
+        width: 20px;
+        height: 20px;
+        stroke: var(--gold);
+        fill: none;
+        stroke-width: 1.6;
+      }
+
+      .award-name {
+        font-size: 0.92rem;
+        font-weight: 500;
+        color: var(--text);
+      }
+
+      .award-year {
+        font-size: 0.75rem;
+        color: var(--text-muted);
+        margin-top: 2px;
+      }
+
+      /* ─── QUOTE ─── */
+      .quote-block {
+        margin-top: 28px;
+        padding: 24px 28px;
+        border-left: 3px solid var(--gold);
+        background: var(--gold-dim);
+        border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      }
+
+      .quote-text {
+        font-family: "DM Serif Display", serif;
+        font-style: italic;
+        font-size: 1.05rem;
+        color: var(--text);
+        line-height: 1.7;
+      }
+
+      .quote-author {
+        font-size: 0.75rem;
+        color: var(--gold);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-top: 10px;
+      }
+
+      /* ─── FOOTER ─── */
+      .footer-note {
+        text-align: center;
+        padding: 20px;
+        font-size: 0.78rem;
+        color: var(--text-dim);
+      }
+
+      /* ─── MOBILE ─── */
+      @media (max-width: 900px) {
+        .layout {
+          grid-template-columns: 1fr;
+          padding: 16px;
+          gap: 14px;
+        }
+
+        .sidebar {
+          position: static;
+        }
+
+        .profile-img-wrap {
+          height: 180px;
+        }
+
+        .profile-card-header {
+          display: flex;
+          align-items: center;
+          gap: 14px;
+          padding: 16px;
+        }
+
+        .profile-img-wrap {
+          width: 80px;
+          height: 80px;
+          border-radius: 12px;
+          overflow: hidden;
+          flex-shrink: 0;
+        }
+
+        .profile-img-wrap::after {
+          display: none;
+        }
+
+        .profile-img-full {
+          display: none;
+        }
+
+        .profile-info {
+          padding: 0;
+        }
+
+        .profile-name {
+          font-size: 1.6rem;
+        }
+
+        .nav-btn {
+          font-size: 0.78rem;
+          padding: 9px 8px;
+        }
+
+        .content-card {
+          padding: 24px 20px;
+        }
+
+        .about-intro {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .services-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .highlights-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .section-title {
+          font-size: 1.8rem;
+        }
+
+        /* Mobile sidebar: compact profile + collapsible details */
+        .sidebar-details {
+          display: none;
+        }
+        .sidebar-details.open {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+        }
+
+        .mobile-expand-btn {
+          background: none;
+          border: none;
+          cursor: pointer;
+          padding: 8px;
+          margin-left: auto;
+          color: var(--text-muted);
+          display: flex;
+          align-items: center;
+        }
+
+        .mobile-expand-btn svg {
+          width: 20px;
+          height: 20px;
+          stroke: currentColor;
+          fill: none;
+          stroke-width: 2;
+          transition: transform 0.3s;
+        }
+        .mobile-expand-btn.open svg {
+          transform: rotate(180deg);
+        }
+      }
+
+      @media (min-width: 901px) {
+        .profile-card-header {
+          display: none;
+        }
+        .profile-img-full {
+          display: block;
+        }
+        .mobile-expand-btn {
+          display: none;
+        }
+        .sidebar-details {
+          display: flex !important;
+          flex-direction: column;
+          gap: 12px;
+        }
+      }
+
+      @media (max-width: 520px) {
+        .highlights-grid {
+          grid-template-columns: 1fr;
+        }
+        .about-intro {
+          grid-template-columns: 1fr 1fr;
+        }
+        .stats-table td {
+          padding: 10px 10px;
+          font-size: 0.82rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <!-- ════════ SIDEBAR ════════ -->
+      <aside class="sidebar">
+        <!-- Mobile compact header -->
+        <div class="profile-card" id="profileCard">
+          <!-- Mobile header row -->
+          <div class="profile-card-header">
+            <div class="profile-img-wrap">
+              <img
+                src="https://bsmedia.business-standard.com/_media/bs/img/article/2024-03/21/full/1711023998-1621.jpg"
+                alt="MS Dhoni"
+              />
+            </div>
+            <div>
+              <div class="profile-name">MS Dhoni</div>
+              <span class="profile-badge">Captain Cool</span>
+            </div>
+            <button
+              class="mobile-expand-btn"
+              id="expandBtn"
+              onclick="toggleSidebar()"
+              aria-label="Expand details"
+            >
+              <svg viewBox="0 0 24 24">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Desktop full image -->
+          <div class="profile-img-full">
+            <div class="profile-img-wrap">
+              <img
+                src="https://bsmedia.business-standard.com/_media/bs/img/article/2024-03/21/full/1711023998-1621.jpg"
+                alt="MS Dhoni"
+              />
+            </div>
+            <div class="profile-info">
+              <div class="profile-name">Mahendra Singh Dhoni</div>
+              <span class="profile-badge">Captain Cool</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Collapsible on mobile -->
+        <div class="sidebar-details" id="sidebarDetails">
+          <!-- Info Card -->
+          <div class="info-card">
+            <div class="info-row">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24">
+                  <rect x="3" y="4" width="18" height="18" rx="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                </svg>
+              </div>
+              <div>
+                <div class="info-label">Born</div>
+                <div class="info-value">7 July 1981, Ranchi</div>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div>
+                <div class="info-label">Origin</div>
+                <div class="info-value">Jharkhand, India</div>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <div class="info-label">Spouse</div>
+                <div class="info-value">Sakshi Dhoni</div>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 8v4l3 3" />
+                </svg>
+              </div>
+              <div>
+                <div class="info-label">Height</div>
+                <div class="info-value">5 ft 9 in (175 cm)</div>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+              </div>
+              <div>
+                <div class="info-label">Military Rank</div>
+                <div class="info-value">Lt. Colonel, Indian Army</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social -->
+          <div class="social-card">
+            <a href="#" class="social-btn" aria-label="Facebook">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Twitter">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="YouTube">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"
+                />
+                <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- /sidebar-details -->
+      </aside>
+
+      <!-- ════════ MAIN ════════ -->
+      <main class="main">
+        <!-- NAV -->
+        <nav class="nav-card" role="tablist">
+          <button
+            class="nav-btn active"
+            onclick="showTab('about', this)"
+            role="tab"
+          >
+            About
+          </button>
+          <button class="nav-btn" onclick="showTab('career', this)" role="tab">
+            Career
+          </button>
+          <button class="nav-btn" onclick="showTab('stats', this)" role="tab">
+            Stats
+          </button>
+          <button class="nav-btn" onclick="showTab('awards', this)" role="tab">
+            Awards
+          </button>
+        </nav>
+
+        <!-- ── ABOUT ── -->
+        <div class="content-card active" id="tab-about">
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
+
+          <div class="about-intro">
+            <div class="stat-box">
+              <div class="stat-num">350</div>
+              <div class="stat-label">ODI Matches</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num">10K+</div>
+              <div class="stat-label">ODI Runs</div>
+            </div>
+          </div>
+
+          <div class="section-body">
+            <p>
+              Mahendra Singh Dhoni — born 7 July 1981 in Ranchi, Jharkhand — is
+              one of the most celebrated figures in cricket history. Known
+              worldwide as "Captain Cool," his composure under pressure became
+              the defining hallmark of a generation.
+            </p>
+            <p>
+              As wicket-keeper and captain, Dhoni rewrote the playbook on
+              leadership. He blended instinctive brilliance with unflinching
+              calm, guiding India to the summit of every major ICC tournament —
+              a feat no captain before or since has matched.
+            </p>
+          </div>
+
+          <div class="quote-block">
+            <p class="quote-text">
+              "Winning and losing are part of life, things which matter is how
+              we play the game."
+            </p>
+            <p class="quote-author">— Mahendra Singh Dhoni</p>
+          </div>
+
+          <br />
+
+          <h3 class="services-heading">Personal Details</h3>
+          <div class="services-line"></div>
+
+          <div class="highlights-grid">
+            <div class="highlight-item">
+              <span class="hl-key">Full Name</span>
+              <span class="hl-val">Mahendra Singh Dhoni</span>
+            </div>
+            <div class="highlight-item">
+              <span class="hl-key">Nickname</span>
+              <span class="hl-val">Mahi · Thala · Captain Cool</span>
+            </div>
+            <div class="highlight-item">
+              <span class="hl-key">Birthday</span>
+              <span class="hl-val">7 July 1981</span>
+            </div>
+            <div class="highlight-item">
+              <span class="hl-key">Height</span>
+              <span class="hl-val">5 ft 9 in (175 cm)</span>
+            </div>
+            <div class="highlight-item">
+              <span class="hl-key">Spouse</span>
+              <span class="hl-val">Sakshi Dhoni</span>
+            </div>
+            <div class="highlight-item">
+              <span class="hl-key">Military Rank</span>
+              <span class="hl-val">Lt. Colonel, Indian Army</span>
+            </div>
+          </div>
+
+          <h3 class="services-heading">What He's Known For</h3>
+          <div class="services-line"></div>
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 8v4l3 3" />
+                </svg>
+              </div>
+              <div class="service-name">Wicket-Keeping</div>
+              <p class="service-desc">
+                Lightning-quick stumpings and catches that left batsmen stunned
+                worldwide.
+              </p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+              </div>
+              <div class="service-name">Match Finishing</div>
+              <p class="service-desc">
+                Arguably the greatest finisher the sport has seen — clutch when
+                it mattered most.
+              </p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </div>
+              <div class="service-name">Leadership</div>
+              <p class="service-desc">
+                Calm, decisive, and trusted — a captain who made every player
+                around him better.
+              </p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                  <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                  <path d="M4 22h16" />
+                  <path
+                    d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"
+                  />
+                  <path
+                    d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"
+                  />
+                  <path d="M18 2H6v7a6 6 0 0 0 12 0V2z" />
+                </svg>
+              </div>
+              <div class="service-name">ICC Trophies</div>
+              <p class="service-desc">
+                Only captain ever to lift all three major ICC trophies — T20 WC,
+                ODI WC & Champions Trophy.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── CAREER ── -->
+        <div class="content-card" id="tab-career">
+          <h2 class="section-title">Career</h2>
+          <div class="section-line"></div>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-left">
+                <div class="tl-dot"></div>
+                <div class="tl-line"></div>
+              </div>
+              <div class="tl-content">
+                <div class="tl-year">2004</div>
+                <div class="tl-title">International Debut</div>
+                <p class="tl-desc">
+                  Made his ODI debut against Bangladesh in Chittagong. A star
+                  was beginning to rise from the streets of Ranchi.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-left">
+                <div class="tl-dot"></div>
+                <div class="tl-line"></div>
+              </div>
+              <div class="tl-content">
+                <div class="tl-year">2007</div>
+                <div class="tl-title">ICC World Twenty20 — Champion</div>
+                <p class="tl-desc">
+                  Led a young, inexperienced India to glory in the inaugural T20
+                  World Cup in South Africa — his first triumph as captain.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-left">
+                <div class="tl-dot"></div>
+                <div class="tl-line"></div>
+              </div>
+              <div class="tl-content">
+                <div class="tl-year">2008–2014</div>
+                <div class="tl-title">Test Captaincy</div>
+                <p class="tl-desc">
+                  Took India to the top of the ICC Test rankings in 2009, the
+                  pinnacle of world Test cricket.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-left">
+                <div class="tl-dot"></div>
+                <div class="tl-line"></div>
+              </div>
+              <div class="tl-content">
+                <div class="tl-year">2011</div>
+                <div class="tl-title">Cricket World Cup — Champion</div>
+                <p class="tl-desc">
+                  The iconic six at Wankhede. India's 28-year wait ended as
+                  Dhoni walked in at No. 5 to seal the title with an unbeaten
+                  91*.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-left">
+                <div class="tl-dot"></div>
+                <div class="tl-line"></div>
+              </div>
+              <div class="tl-content">
+                <div class="tl-year">2013</div>
+                <div class="tl-title">ICC Champions Trophy — Champion</div>
+                <p class="tl-desc">
+                  Completed the set — becoming the first and only captain to win
+                  all three major ICC tournaments.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-left">
+                <div class="tl-dot"></div>
+                <div class="tl-line"></div>
+              </div>
+              <div class="tl-content">
+                <div class="tl-year">2007–Present</div>
+                <div class="tl-title">Chennai Super Kings — IPL Icon</div>
+                <p class="tl-desc">
+                  Led CSK to multiple IPL titles, becoming the soul of the
+                  franchise and the most beloved captain in league history.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-left"><div class="tl-dot"></div></div>
+              <div class="tl-content">
+                <div class="tl-year">2020</div>
+                <div class="tl-title">International Retirement</div>
+                <p class="tl-desc">
+                  Announced retirement from international cricket on
+                  Independence Day — quietly, without fanfare. Exactly who he
+                  is.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── STATS ── -->
+        <div class="content-card" id="tab-stats">
+          <h2 class="section-title">Statistics</h2>
+          <div class="section-line"></div>
+
+          <div class="about-intro" style="margin-bottom: 28px">
+            <div class="stat-box">
+              <div class="stat-num">50.53</div>
+              <div class="stat-label">ODI Batting Average</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num">10,773</div>
+              <div class="stat-label">ODI Runs</div>
+            </div>
+          </div>
+
+          <table class="stats-table">
+            <tbody>
+              <tr>
+                <td>Matches (ODI)</td>
+                <td>350</td>
+              </tr>
+              <tr>
+                <td>Runs Scored (ODI)</td>
+                <td>10,773</td>
+              </tr>
+              <tr>
+                <td>Batting Average (ODI)</td>
+                <td>50.53</td>
+              </tr>
+              <tr>
+                <td>Strike Rate (ODI)</td>
+                <td>87.56</td>
+              </tr>
+              <tr>
+                <td>Centuries (ODI)</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Half-Centuries (ODI)</td>
+                <td>73</td>
+              </tr>
+              <tr>
+                <td>Highest Score (ODI)</td>
+                <td>183*</td>
+              </tr>
+              <tr>
+                <td>Test Matches</td>
+                <td>90</td>
+              </tr>
+              <tr>
+                <td>Test Runs</td>
+                <td>4,876</td>
+              </tr>
+              <tr>
+                <td>Stumpings (ODI)</td>
+                <td>123</td>
+              </tr>
+              <tr>
+                <td>Catches (ODI)</td>
+                <td>195</td>
+              </tr>
+              <tr>
+                <td>T20I Matches</td>
+                <td>98</td>
+              </tr>
+              <tr>
+                <td>T20I Runs</td>
+                <td>1,617</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- ── AWARDS ── -->
+        <div class="content-card" id="tab-awards">
+          <h2 class="section-title">Awards</h2>
+          <div class="section-line"></div>
+
+          <div class="awards-list">
+            <div class="award-item">
+              <div class="award-icon">
+                <svg viewBox="0 0 24 24">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+              </div>
+              <div>
+                <div class="award-name">Padma Bhushan</div>
+                <div class="award-year">
+                  2018 · Third highest civilian honour of India
+                </div>
+              </div>
+            </div>
+            <div class="award-item">
+              <div class="award-icon">
+                <svg viewBox="0 0 24 24">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+              </div>
+              <div>
+                <div class="award-name">Padma Shri</div>
+                <div class="award-year">
+                  2009 · Fourth highest civilian honour of India
+                </div>
+              </div>
+            </div>
+            <div class="award-item">
+              <div class="award-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                  <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                  <path d="M4 22h16" />
+                  <path d="M18 2H6v7a6 6 0 0 0 12 0V2z" />
+                </svg>
+              </div>
+              <div>
+                <div class="award-name">Major Dhyan Chand Khel Ratna</div>
+                <div class="award-year">
+                  2008 · Highest sporting honour of India
+                </div>
+              </div>
+            </div>
+            <div class="award-item">
+              <div class="award-icon">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="8" r="6" />
+                  <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+                </svg>
+              </div>
+              <div>
+                <div class="award-name">ICC World's Best Wicketkeeper</div>
+                <div class="award-year">
+                  2006, 2008, 2009, 2011 · ICC Awards
+                </div>
+              </div>
+            </div>
+            <div class="award-item">
+              <div class="award-icon">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="8" r="6" />
+                  <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+                </svg>
+              </div>
+              <div>
+                <div class="award-name">ICC ODI Player of the Year</div>
+                <div class="award-year">
+                  2008, 2009 · Back-to-back ICC Awards
+                </div>
+              </div>
+            </div>
+            <div class="award-item">
+              <div class="award-icon">
+                <svg viewBox="0 0 24 24">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+              </div>
+              <div>
+                <div class="award-name">Honorary Lieutenant Colonel</div>
+                <div class="award-year">Indian Territorial Army · 2011</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <p class="footer-note">© 2025 — Mahendra Singh Dhoni Tribute Page</p>
+
+    <script>
+      function showTab(id, btn) {
+        document
+          .querySelectorAll(".content-card")
+          .forEach((c) => c.classList.remove("active"));
+        document
+          .querySelectorAll(".nav-btn")
+          .forEach((b) => b.classList.remove("active"));
+        document.getElementById("tab-" + id).classList.add("active");
+        btn.classList.add("active");
+      }
+
+      function toggleSidebar() {
+        const details = document.getElementById("sidebarDetails");
+        const btn = document.getElementById("expandBtn");
+        const isOpen = details.classList.contains("open");
+        details.classList.toggle("open", !isOpen);
+        btn.classList.toggle("open", !isOpen);
+      }
+    </script>
+  </body>
 </html>
