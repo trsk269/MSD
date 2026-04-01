@@ -1,31 +1,62 @@
-MS Dhoni — Tribute Page
-A clean, responsive tribute page for Mahendra Singh Dhoni built with vanilla HTML, CSS, and JavaScript. Styled with a dark gold theme inspired by a modern portfolio layout.
+# MS Dhoni — Legend
 
-Preview
-DesktopMobileSticky sidebar + tabbed main contentCollapsible profile header with expand toggle
+A lightweight single-page profile website celebrating the career of Cricket legend MS Dhoni, built with HTML and CSS only.
 
-Features
+## 🌟 Project Overview
 
-Dark theme — deep charcoal background with a gold accent palette
-Tabbed navigation — About, Career, Stats, Awards with animated tab switching
-Responsive layout — two-column on desktop, single-column stacked on mobile
-Career timeline — from international debut (2004) to retirement (2020)
-Expanded stats table — 13 ODI / Test / T20I statistics
-No dependencies — pure HTML/CSS/JS, zero frameworks or build tools
+- Static site (`index.html`) with custom typography, responsive layout, and dark theme.
+- Sidebar profile card + info + social buttons.
+- Smooth one-page scroll navigation and modern UI interactions.
+- No JavaScript dependency.
 
+## 🚀 Live Preview
 
-Project Structure
-├── index.html       # Single-file app — markup, styles, and scripts included
-└── README.md
+Open `MSD/index.html` directly in your browser:
 
-Getting Started
-Just open index.html in any modern browser — no build step, no installs.
-bashgit clone https://github.com/your-username/msd-tribute
-cd msd-tribute
-open index.html
+- macOS / Linux:
+  - `open /Users/trsk/Downloads/github/MSD/MSD/index.html`
+- Windows:
+  - Double-click `index.html`
 
-Tech Stack
+## 🛠️ Technologies
 
-HTML5 & CSS3 (custom properties, grid, flexbox)
-Vanilla JavaScript (tab switching, mobile sidebar toggle)
-Google Fonts — Bebas Neue · DM Serif Display · DM Sans
+- HTML5
+- CSS3 (variables, grid, transitions)
+- Google Fonts:
+  - `Bebas Neue`
+  - `DM Sans`
+  - `DM Serif Display`
+
+## 📁 Repository Structure
+
+- `MSD/index.html` — Full app content and style in one file.
+
+## ▶️ Usage
+
+1. Clone the repo:
+   - `git clone https://github.com/trsk269/MSD.git`
+2. Open:
+   - `MSD/MSD/index.html`
+3. Optional: serve with simple HTTP server for local development:
+   - `cd MSD/MSD`
+   - `python3 -m http.server 8000`
+   - Browse: `http://localhost:8000`
+
+## ✍️ Customization
+
+- Update profile content inside the card.
+- Add `img` source and text.
+- Tweak CSS variables for color & theme.
+- Expand with sections (career facts, stats, achievements) into `.main`.
+
+## 📦 Contribution
+
+1. Fork this repo
+2. Create feature branch: `git checkout -b feature/your-feature`
+3. Commit changes: `git commit -m "Add ..."`
+4. Push: `git push origin feature/your-feature`
+5. Create PR and describe the change.
+
+## 🧾 License
+
+MIT License (or choose your preferred open-source license)
