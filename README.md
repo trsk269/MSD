@@ -56,7 +56,3 @@ Open `MSD/index.html` directly in your browser:
 3. Commit changes: `git commit -m "Add ..."`
 4. Push: `git push origin feature/your-feature`
 5. Create PR and describe the change.
-
-## 🧾 License
-
-MIT License (or choose your preferred open-source license)
